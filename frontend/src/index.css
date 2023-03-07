@@ -1,0 +1,64 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-c);
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  user-select: none;
+}
+
+.app-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-container.login-page {
+  max-width: 500px;
+}
+
+.svg-card, .svg-card .p-card-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0;
+}
+.svg-card .p-card-body {
+  padding: 0.3rem;
+}
+
+.table-card .p-card-content,
+.table-card .p-card-body {
+  padding: 0;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 649px) {
+  .map-row {
+    flex-flow: column-reverse nowrap !important;
+  }
+
+  .map-row .svg-card  {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1168px) {
+  .app-container {
+    max-width: 900px;
+  }
+}
+
